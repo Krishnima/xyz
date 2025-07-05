@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Voting System</h1>
+        
+        <!-- Voting Section -->
+        <div id="voting-section">
+            <h2>Select a Candidate to Vote</h2>
+            <div id="candidates">
+                <!-- Dynamic candidates will be loaded here -->
+            </div>
+            <button id="submitVoteBtn" disabled>Submit Vote</button>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results-section" style="display: none;">
+            <h2>Vote Results</h2>
+            <div id="results">
+                <!-- Dynamic results will be displayed here -->
+            </div>
+        </div>
+
+        <button id="showResultsBtn" style="display: none;" onclick="displayResults()">Show Results</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
